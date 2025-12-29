@@ -1,4 +1,0 @@
-slug: pd4
-name: PDA Account Initialization
-difficulty: medium
-description: Implement PDA-based account creation with proper seeds and space allocation

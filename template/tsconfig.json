@@ -1,15 +1,16 @@
 {
   "compilerOptions": {
-    "types": ["mocha", "chai"],
-    "typeRoots": ["./node_modules/@types"],
+    "types": ["mocha"],
     "lib": ["es2020"],
-    "module": "commonjs",
     "target": "es2020",
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
+    "module": "commonjs",
+    "moduleResolution": "node",
     "strict": true,
+    "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "resolveJsonModule": true
-  }
+    "outDir": "./dist",
+    "rootDir": "."
+  },
+  "include": ["tests/**/*", "migrations/**/*"]
 }

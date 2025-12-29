@@ -3,15 +3,26 @@ name: Solana Swap Program Development
 short_name: Solana Swap
 release_status: beta
 description: |-
-  Build a decentralized token swap program on the Solana blockchain. In this challenge,
-  you'll create a secure, on-chain swap program using Anchor framework that allows
-  users to create offers and swap tokens in a trustless manner.
+  Learn to build a peer-to-peer token swap program on Solana blockchain.
+  This beginner-friendly course covers everything from environment setup to
+  deploying a secure swap smart contract using the Anchor framework.
 
-  Along the way, you'll learn about Solana's account model, program-derived addresses (PDAs),
-  cross-program invocations (CPI), SPL token integration, and on-chain state management.
-  You'll also master Rust for Solana development and understand how to build secure,
-  gas-efficient smart contracts.
+  You will start with foundational concepts like Solana's account model,
+  Rust programming for blockchain, and SPL tokens. Then you will progressively
+  build a complete swap program featuring program-derived addresses (PDAs),
+  secure token vaults, and proper escrow handling.
 
-  By the end, you'll have a fully functional swap dApp that demonstrates core
-  Web3 concepts and Solana development best practices.
-summary: Build a decentralized token swap program on Solana blockchain using Anchor framework
+  The course emphasizes hands-on learning with Rust-based tests and practical
+  exercises at every stage. By the end, you will have a fully functional
+  decentralized exchange program that enables trustless token swaps between users.
+
+  Topics covered include:
+  - Solana development environment and Rust basics
+  - SPL tokens and associated token accounts
+  - Cross-Program Invocations (CPI) for token operations
+  - Program-Derived Addresses (PDAs) for secure account management
+  - Escrow patterns and vault security
+  - Comprehensive testing with Rust
+  - Production deployment best practices
+
+summary: Build a peer-to-peer token swap program on Solana using Anchor framework

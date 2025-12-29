@@ -1,0 +1,4 @@
+slug: vaultsecurity
+name: Vault Security
+difficulty: medium
+description: Learn security considerations for vault implementation including access control and validation

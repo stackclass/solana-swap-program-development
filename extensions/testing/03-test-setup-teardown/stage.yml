@@ -1,0 +1,4 @@
+slug: testsetup
+name: Test Setup and Teardown
+difficulty: medium
+description: Learn patterns for setting up test environments and cleaning up after tests

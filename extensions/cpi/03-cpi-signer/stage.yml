@@ -1,0 +1,4 @@
+slug: cpisigner
+name: CPI Signer
+difficulty: medium
+description: Learn how to use PDA signing in CPI calls for program-controlled accounts

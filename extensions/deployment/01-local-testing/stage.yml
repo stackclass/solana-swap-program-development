@@ -1,0 +1,4 @@
+slug: localtesting
+name: Local Testing
+difficulty: medium
+description: Learn to test your program on a local validator before deploying to networks

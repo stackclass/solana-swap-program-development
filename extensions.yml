@@ -1,3 +1,39 @@
-- slug: advanced-features
-  name: Advanced Features
-  description: Advanced swap program features including time-based expiration and partial fills
+- slug: pda
+  name: Program Derived Addresses
+  description: Learn about PDAs, how to derive them, and use bump seeds for secure account management in your swap program
+
+- slug: vault
+  name: Token Vault Management
+  description: Understand token vault creation, custody patterns, and security best practices for holding swap deposits
+
+- slug: offer
+  name: Offer Data Structure
+  description: Design and implement the Offer account structure that stores swap proposal details on-chain
+
+- slug: make-offer
+  name: Make Offer Instruction
+  description: Implement the make_offer instruction to create swap proposals and deposit tokens into the vault
+
+- slug: take-offer
+  name: Take Offer Instruction
+  description: Implement the take_offer instruction to execute swaps by exchanging tokens between parties
+
+- slug: security
+  name: Security Best Practices
+  description: Learn common vulnerabilities, reentrancy protection, and validation techniques for secure smart contracts
+
+- slug: cpi
+  name: Cross-Program Invocation
+  description: Master CPI for token operations including transfer_checked and understanding CPI signer authorization
+
+- slug: error
+  name: Error Handling
+  description: Define custom error codes, write descriptive error messages, and implement proper error handling patterns
+
+- slug: testing
+  name: Rust Testing
+  description: Write comprehensive tests using Rust's test attributes and Anchor's program testing framework
+
+- slug: deployment
+  name: Deployment
+  description: Deploy and test your program on local validator, devnet, and understand mainnet considerations

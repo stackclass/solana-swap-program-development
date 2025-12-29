@@ -1,0 +1,4 @@
+slug: rusttestbasics
+name: Rust Test Basics
+difficulty: medium
+description: Learn the fundamentals of Rust testing including #[test] attribute and assertions

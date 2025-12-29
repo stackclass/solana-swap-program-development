@@ -1,0 +1,4 @@
+slug: errorbasics
+name: Error Basics
+difficulty: medium
+description: Learn about error handling in Anchor programs and the Result type

@@ -1,0 +1,4 @@
+slug: receivetokens
+name: Receive Tokens
+difficulty: medium
+description: Learn how to implement the payment transfer from taker to maker

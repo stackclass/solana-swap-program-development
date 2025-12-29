@@ -1,0 +1,4 @@
+slug: transferchecked
+name: Transfer Checked
+difficulty: medium
+description: Learn to implement transfer_checked CPI for precise token transfers

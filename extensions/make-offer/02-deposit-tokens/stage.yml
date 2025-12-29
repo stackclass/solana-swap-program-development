@@ -1,0 +1,4 @@
+slug: deposittokens
+name: Deposit Tokens
+difficulty: medium
+description: Learn how to implement token deposit from maker to vault using CPI

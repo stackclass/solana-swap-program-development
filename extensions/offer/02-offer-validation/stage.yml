@@ -1,0 +1,4 @@
+slug: offervalidation
+name: Offer Validation
+difficulty: medium
+description: Learn how to validate offers using Anchor's account constraints and relationship validation

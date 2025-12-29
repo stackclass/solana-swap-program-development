@@ -1,0 +1,4 @@
+slug: be1
+name: Environment Setup
+difficulty: very_easy
+description: Install and configure Rust, Solana CLI, and Anchor framework for Solana development

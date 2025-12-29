@@ -1,0 +1,4 @@
+slug: pdabump
+name: PDA Bump Seeds
+difficulty: medium
+description: Understand bump seeds, canonical bump, and how to use them for secure PDA signing

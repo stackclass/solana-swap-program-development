@@ -3,7 +3,7 @@ cluster = "Localnet"
 wallet = "~/.config/solana/id.json"
 
 [programs.localnet]
-swap = "DAehvmx2vZoWCJi7Qo3Y4YF5vrEWHQRJ288kqKwDy5DV"
+swap = "11111111111111111111111111111111"
 
 [scripts]
-test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
+test = "cargo test -- --nocapture"
