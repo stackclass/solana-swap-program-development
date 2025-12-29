@@ -1,0 +1,17 @@
+slug: solana-swap-program
+name: Solana Swap Program Development
+short_name: Solana Swap
+release_status: beta
+description: |-
+  Build a decentralized token swap program on the Solana blockchain. In this challenge,
+  you'll create a secure, on-chain swap program using Anchor framework that allows
+  users to create offers and swap tokens in a trustless manner.
+
+  Along the way, you'll learn about Solana's account model, program-derived addresses (PDAs),
+  cross-program invocations (CPI), SPL token integration, and on-chain state management.
+  You'll also master Rust for Solana development and understand how to build secure,
+  gas-efficient smart contracts.
+
+  By the end, you'll have a fully functional swap dApp that demonstrates core
+  Web3 concepts and Solana development best practices.
+summary: Build a decentralized token swap program on Solana blockchain using Anchor framework

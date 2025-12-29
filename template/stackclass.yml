@@ -1,0 +1,18 @@
+# Set this to true if you want debug logs.
+#
+# These can be VERY verbose, so we suggest turning them off
+# unless you really need them.
+debug: false
+
+# Use this to change the Rust version used to run your code
+# on StackClass.
+#
+# Available versions: rust-1.87
+language_pack: rust-1.87
+
+# The executable required to build and run the this project,
+# along with its minimum required version.
+required_executable: cargo (1.87)
+
+# The main source file that users can edit for this project.
+user_editable_file: programs/swap/src/lib.rs
