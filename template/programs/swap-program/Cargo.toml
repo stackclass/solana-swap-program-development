@@ -1,5 +1,5 @@
 [package]
-name = "swap"
+name = "swap-program"
 version = "0.1.0"
 description = "Solana swap program"
 edition = "2021"

@@ -79,7 +79,7 @@ The `map_err` transforms the original error into your custom error.
 Keep errors in a separate module:
 
 ```rust
-// programs/swap/src/error.rs
+// programs/swap-program/src/error.rs
 use anchor_lang::prelude::*;
 
 #[error_code]
@@ -87,7 +87,7 @@ pub enum SwapError {
     // error definitions
 }
 
-// programs/swap/src/lib.rs
+// programs/swap-program/src/lib.rs
 mod error;
 use error::SwapError;
 ```
