@@ -55,7 +55,7 @@ fn main() {
     if args.len() > 1 && args[1] == "dump_info" {
         dump_program_info();
     } else {
-        // 默认行为：什么都不做
+        // Default behavior: do nothing
         println!("Solana Swap Program - Use 'dump_info' command to export program definition");
     }
 }
@@ -83,14 +83,14 @@ fn parse_program_info(content: &str) -> ProgramInfo {
         structs: Vec::new(),
     };
 
-    // 解析 program_id
+    // Parse program_id
     if let Some(captures) = regex::Regex::new(r#"declare_id!\("([^"]+)"\)"#).unwrap().captures(content) {
         if let Some(id) = captures.get(1) {
             program_info.program_id = id.as_str().to_string();
         }
     }
 
-    // 解析指令 (pub fn)
+    // Parse instructions (pub fn)
     let instruction_re = regex::Regex::new(r#"pub fn (\w+)\(ctx: Context<([^>]+)>(?:, ([^)]+))?\)"#).unwrap();
     for caps in instruction_re.captures_iter(content) {
         let name = caps.get(1).map(|m| m.as_str().to_string()).unwrap_or_default();
@@ -116,7 +116,7 @@ fn parse_program_info(content: &str) -> ProgramInfo {
         });
     }
 
-    // 解析账户结构 (#[derive(Accounts)] pub struct)
+    // Parse account structures (#[derive(Accounts)] pub struct)
     let account_re = regex::Regex::new(r#"#\[derive\(Accounts\)\]\s+pub struct (\w+)<[^>]*>\s*\{([^}]+)\}"#).unwrap();
     for caps in account_re.captures_iter(content) {
         let name = caps.get(1).map(|m| m.as_str().to_string()).unwrap_or_default();
@@ -131,12 +131,12 @@ fn parse_program_info(content: &str) -> ProgramInfo {
                 continue;
             }
 
-            // 如果是属性行，继续累积
+            // If it's an attribute line, continue accumulating
             if line.starts_with('#') {
                 current_field.push_str(line);
                 current_field.push(' ');
             } else {
-                // 如果是字段定义行
+                // If it's a field definition line
                 if let Some((name_part, type_part)) = line.split_once(':') {
                     let field_name = name_part.split_whitespace().last().unwrap_or("").to_string();
                     fields.push(FieldInfo {
@@ -151,7 +151,7 @@ fn parse_program_info(content: &str) -> ProgramInfo {
         program_info.accounts.push(AccountInfo { name, fields });
     }
 
-    // 解析错误 (pub enum Error)
+    // Parse errors (pub enum Error)
     let error_re = regex::Regex::new(r#"pub enum Error\s*\{([^}]+)\}"#).unwrap();
     if let Some(caps) = error_re.captures(content) {
         let errors_str = caps.get(1).map(|m| m.as_str().to_string()).unwrap_or_default();
@@ -169,7 +169,7 @@ fn parse_program_info(content: &str) -> ProgramInfo {
         }
     }
 
-    // 解析普通结构体 (pub struct)
+    // Parse regular structs (pub struct)
     let struct_re = regex::Regex::new(r#"pub struct (\w+)\s*\{([^}]+)\}"#).unwrap();
     for caps in struct_re.captures_iter(content) {
         let name = caps.get(1).map(|m| m.as_str().to_string()).unwrap_or_default();
