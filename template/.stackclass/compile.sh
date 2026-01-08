@@ -8,4 +8,4 @@
 
 set -e # Exit on failure
 
-cargo build --release
+anchor build

@@ -1,9 +1,18 @@
-[provider]
-cluster = "Localnet"
-wallet = "~/.config/solana/id.json"
+[toolchain]
+
+[features]
+resolution = true
+skip-lint = false
 
 [programs.localnet]
-swap = "11111111111111111111111111111111"
+swap-program = "G8m2Q8kMhkHf3xkVtb9nKfLeiWaSY352QBYsZGH3YfBT"
+
+[registry]
+url = "https://api.apr.dev"
+
+[provider]
+cluster = "localnet"
+wallet = "~/.config/solana/id.json"
 
 [scripts]
 test = "cargo test -- --nocapture"
